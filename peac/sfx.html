@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <title>Peac Prezi</title>
+<title>Peac Prezi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body,
@@ -28,10 +29,32 @@
     .fa-coffee {
         font-size: 200px
     }
+    
+    #myNavbar {
+        font-family: "Raleway", sans-serif
+    }
 </style>
 
 <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <a href="/index.html" class="w3-bar-item w3-button w3-wide">WBM</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/peac/index.html" class="w3-bar-item w3-button">PEAC</a>
+                <a href="/stem/index.html" class="w3-bar-item w3-button">STEM</a>
+                <a href="/fandtv/index.html" class="w3-bar-item w3-button">Film And TV</a>
+                <a href="/youtube/index.html" class="w3-bar-item w3-button">Youtube</a>
+                <!--<a href="#contact" class="w3-bar-item w3-button">Kittens Are Pawsome</a>-->
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
 
 
     <!-- Header -->

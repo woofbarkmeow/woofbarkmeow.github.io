@@ -1,14 +1,15 @@
 
 <!DOCTYPE html>
 <html>
-  <title>Peac Prezi</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+  <title>Peac</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
     body,
     h1,
     h2,
@@ -16,48 +17,68 @@
     h4,
     h5,
     h6 {
-      font-family: "Lato", sans-serif
+        font-family: "Lato", sans-serif
     }
     
     .w3-bar,
     h1,
     button {
-      font-family: "Montserrat", sans-serif
+        font-family: "Montserrat", sans-serif
     }
     
     .fa-film,
     .fa-coffee {
-      font-size: 200px
+        font-size: 200px
     }
+    #myNavbar {
+        font-family: "Raleway", sans-serif
+    }
+</style>
 
-  </style>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <a href="/index.html" class="w3-bar-item w3-button w3-wide">WBM</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/peac/index.html" class="w3-bar-item w3-button">PEAC</a>
+                <a href="/stem/index.html" class="w3-bar-item w3-button">STEM</a>
+                <a href="/fandtv/index.html" class="w3-bar-item w3-button">Film And TV</a>
+                <a href="/youtube/index.html" class="w3-bar-item w3-button">Youtube</a>
+                <!--<a href="#contact" class="w3-bar-item w3-button">Kittens Are Pawsome</a>-->
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-  <body>
-
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
 
 
     <!-- Header -->
     <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-      <h1 class="w3-margin w3-jumbo">Peac Projects</h1>
-      <p class="w3-xlarge">By James</p>
-      <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
+        <h1 class="w3-margin w3-jumbo">Peac Projects</h1>
+        <p class="w3-xlarge">By James</p>
+        <!--<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>-->
     </header>
 
     <!-- First Grid -->
     <div class="w3-row-padding w3-padding-64 w3-container">
-      <div class="w3-content">
-        <div class="w3-twothird">
-         <h1>Harry Potter SFX</h1>
-          <h5 class="w3-padding-32">Here is a presentation on the SFX used in the Harry Potter Movies.</h5>
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Harry Potter SFX</h1>
+                <h5 class="w3-padding-32">Here is a presentation on the SFX used in the Harry Potter Movies.</h5>
 
-          <p class="w3-text-grey">Please click on the film to see it!</p>
+                <p class="w3-text-grey">Please click on the film to see it!</p>
 
+            </div>
+
+            <div class="w3-third w3-center">
+                <a href="sfx.html"><i class="fa fa-film w3-padding-64 w3-text-red"></i></a>
+            </div>
         </div>
-
-        <div class="w3-third w3-center">
-            <a href="sfx.html"><i class="fa fa-film w3-padding-64 w3-text-red"></i></a>
-        </div>
-      </div>
     </div>
 
     <!-- Second Grid -->
@@ -79,8 +100,8 @@
     </div> -->
 
     <div class="w3-container w3-blue w3-center w3-opacity w3-padding-64">
-      <!-- <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1> -->
-      <!--<button onclick="myFunction()" class="w3-btn w3-indigo w3-round-xxlarge w3-xlarge">Click to Show My Bibliography</button>
+        <!-- <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1> -->
+        <!--<button onclick="myFunction()" class="w3-btn w3-indigo w3-round-xxlarge w3-xlarge">Click to Show My Bibliography</button>
 
       <div id="myref" class="w3-hide">
         <ul class="w3-ul w3-teal w3-margin-top">
@@ -96,7 +117,7 @@ Shontell, A. (2013, May 17). 28 Incredible Things You Never Knew About How The H
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-      <!--  <div class="w3-xlarge w3-padding-32">
+        <!--  <div class="w3-xlarge w3-padding-32">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
         <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -104,22 +125,21 @@ Shontell, A. (2013, May 17). 28 Incredible Things You Never Knew About How The H
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
       </div> -->
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
     </footer>
 
     <script>
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function myFunction() {
-        var x = document.getElementById("myref");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("myref");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-      }
-
     </script>
 
-  </body>
+</body>
 
 </html>
