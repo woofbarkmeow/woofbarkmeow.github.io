@@ -30,7 +30,10 @@
     .fa-coffee {
         font-size: 200px
     }
- #myNavbar { font-family: "Raleway", sans-serif }
+    
+    #myNavbar {
+        font-family: "Raleway", sans-serif
+    }
 </style>
 
 <body>
@@ -53,6 +56,15 @@
             </a>
         </div>
     </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="/peac/index.html" onclick="w3_close()" class="w3-bar-item w3-button">PEAC</a>
+        <a href="/stem/index.html" onclick="w3_close()" class="w3-bar-item w3-button">STEM</a>
+        <a href="/fandtv/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Film And TV</a>
+        <a href="/youtube/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Youtube</a>
+    </nav>
 
 
     <!-- Header -->
@@ -135,6 +147,21 @@ Shontell, A. (2013, May 17). 28 Incredible Things You Never Knew About How The H
             } else {
                 x.className = x.className.replace(" w3-show", "");
             }
+        }
+         // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
         }
     </script>
 
