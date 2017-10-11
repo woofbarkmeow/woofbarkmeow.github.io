@@ -1,4 +1,100 @@
 <!DOCTYPE html>
 <html>
-<meta http-equiv="refresh" content="0; URL='/under_construction.html'" />
+<head>
+    <!--<meta http-equiv="refresh" content="0; URL='/under_construction.html'" />-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <title>Digital Media</title>
+    <style>
+        @font-face {
+            font-family: "JAMS1-regular";
+            src: url("/fonts/Jams1-Regular.woff") format("woff"), url("/fonts/Jams1-Regular.ttf") format("ttf");
+        }
+        
+        .jams-font-1 {
+            font-family: "JAMS1-regular", sans-serif
+        }
+        
+        h2,
+        h1 {
+            text-align: center;
+            font-family: "JAMS1-regular", sans-serif
+        }
+        
+        #myNavbar {
+            font-family: "Raleway", sans-serif
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card-2" id="myNavbar">
+            <a href="/index.html" class="w3-bar-item w3-button w3-wide">WBM</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/peac/index.html" class="w3-bar-item w3-button">PEAC</a>
+                <a href="/stem/index.html" class="w3-bar-item w3-button">STEM</a>
+                <a href="/fandtv/index.html" class="w3-bar-item w3-button">Film And TV</a>
+                <a href="/youtube/index.html" class="w3-bar-item w3-button">Youtube</a>
+                <!--<a href="#contact" class="w3-bar-item w3-button">Kittens Are Pawsome</a>-->
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+        <a href="/peac/index.html" onclick="w3_close()" class="w3-bar-item w3-button">PEAC</a>
+        <a href="/stem/index.html" onclick="w3_close()" class="w3-bar-item w3-button">STEM</a>
+        <a href="/fandtv/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Film And TV</a>
+        <a href="/youtube/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Youtube</a>
+    </nav>
+
+    <div class="w3-container w3-blue w3-center w3-padding-64">
+        <h1 class="w3-jumbo">Digital Media</h1>
+    </div>
+    <div class="w3-container w3-light-grey w3-text-blue">
+        <h2>Aliquam condimentum mattis</h2>
+        <p>Duis tellus sem, pellentesque id vestibulum ut, vestibulum mollis ligula. Ut convallis, ante in maximus feugiat, mi sem scelerisque ex, vitae sagittis nulla lectus vitae leo. Vivamus sodales luctus euismod. Curabitur viverra luctus massa, vitae aliquam felis tempus sit amet. Suspendisse potenti. Aliquam erat volutpat. Nulla pretium quam sed mauris porttitor, et consequat tellus consectetur. Fusce ultrices ut turpis sit amet feugiat. Vivamus nec elit ut tellus pulvinar vestibulum. Vestibulum eu tortor vel enim aliquet convallis. Etiam lobortis mauris non dignissim aliquet. Nulla semper eget ipsum vitae euismod. Praesent maximus sem augue, id posuere odio gravida ac. Aenean id nulla dolor. Phasellus molestie dolor vitae mi vestibulum, sit amet lobortis arcu suscipit. Quisque at felis ut velit aliquam ornare</p>
+    </div>
+
+</body>
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("myref");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+        } else {
+            mySidebar.style.display = 'block';
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+</script>    
+    
 </html>
