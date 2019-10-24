@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta http-equiv="refresh" content="0; URL='/under_construction.html'" />
+    <!-- <meta http-equiv="refresh" content="0; URL='/under_construction.html'" /> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>Digital Media</title>
@@ -25,9 +25,23 @@
         #myNavbar {
             font-family: "Raleway", sans-serif
         }
-
     </style>
-
+    <style>
+        .resp-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+        
+        .resp-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 
 
 
@@ -64,11 +78,13 @@
     </nav>
 
     <div class="w3-container w3-blue w3-center w3-padding-64">
-        <h1 class="w3-jumbo">Digital Media</h1>
+        <h1 class="w3-jumbo">Specialist Film and Television</h1>
     </div>
     <div class="w3-container w3-light-grey w3-text-blue">
-        <h2>Aliquam condimentum mattis</h2>
-        <p>Duis tellus sem, pellentesque id vestibulum ut, vestibulum mollis ligula. Ut convallis, ante in maximus feugiat, mi sem scelerisque ex, vitae sagittis nulla lectus vitae leo. Vivamus sodales luctus euismod. Curabitur viverra luctus massa, vitae aliquam felis tempus sit amet. Suspendisse potenti. Aliquam erat volutpat. Nulla pretium quam sed mauris porttitor, et consequat tellus consectetur. Fusce ultrices ut turpis sit amet feugiat. Vivamus nec elit ut tellus pulvinar vestibulum. Vestibulum eu tortor vel enim aliquet convallis. Etiam lobortis mauris non dignissim aliquet. Nulla semper eget ipsum vitae euismod. Praesent maximus sem augue, id posuere odio gravida ac. Aenean id nulla dolor. Phasellus molestie dolor vitae mi vestibulum, sit amet lobortis arcu suscipit. Quisque at felis ut velit aliquam ornare</p>
+        <h2>Here you can look at some of my projects!</h2>
+        <br>
+        <div class="resp-container"><iframe class="resp-iframe" src="https://www.youtube.com/embed/O9nwzkV67A8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p>This is a test intro for my youtube channel made in Davinci Resolve 16 Fusion.</p>
     </div>
 
 </body>
@@ -97,7 +113,6 @@
     function w3_close() {
         mySidebar.style.display = "none";
     }
-
 </script>
 
 </html>
