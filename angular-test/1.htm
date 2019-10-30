@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>angular test 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+</head>
+
+<body ng-app="">
+    <div>
+        <p>Name: <input type="text" ng-model="name"></p>
+        <h1>Hello {{name}}</h1>
+    </div>
+    <br>
+    <br>
+    <div ng-init="alpha=0;beta=0">
+        <p>a: <input type="number" ng-model="alpha"><br> +
+            <br> b: <input type="number" ng-model="beta"></p>
+        <h1>= {{alpha + beta}}</h1>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
